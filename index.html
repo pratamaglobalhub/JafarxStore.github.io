@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1020"><meta name="description" content="JafarxStore — digital content store">
+<title>JafarxStore</title>
+<link rel="manifest" href="manifest.json"><link rel="icon" href="assets/logo.svg">
+<style>
+:root{--bg:#080b14;--card:#111727;--card2:#171e31;--text:#f5f7ff;--muted:#9aa4bb;--accent:#7c5cff;--accent2:#00d4ff;--line:#252d42;--good:#35d07f}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0,#17204a 0,#080b14 38%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}button{font:inherit}.wrap{max-width:900px;margin:auto;padding:18px 16px 100px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:6px 0 24px}.brand{display:flex;align-items:center;gap:10px}.brand img{width:48px;height:48px}.brand b{font-size:19px}.brand span{display:block;color:var(--muted);font-size:12px}.support{border:1px solid var(--line);background:#111827;color:#fff;padding:10px 13px;border-radius:14px;cursor:pointer}.hero{padding:24px;border:1px solid var(--line);background:linear-gradient(135deg,#141b30cc,#0e1322cc);border-radius:24px;box-shadow:0 20px 70px #0005}.hero h1{font-size:34px;line-height:1.05;margin:0 0 10px}.hero p{color:var(--muted);margin:0;line-height:1.6}.pill{display:inline-flex;margin-top:16px;padding:7px 10px;border-radius:99px;background:#7c5cff20;color:#bdb2ff;border:1px solid #7c5cff55;font-size:12px}.section{display:flex;align-items:center;justify-content:space-between;margin:28px 2px 14px}.section h2{font-size:18px;margin:0}.section span{color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.product{border:1px solid var(--line);background:linear-gradient(180deg,#141a2b,#0f1421);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;min-height:270px}.visual{height:165px;position:relative;overflow:hidden;background:#0d1325}.visual img{width:100%;height:100%;display:block;object-fit:cover}.tag{position:absolute;z-index:2;top:12px;right:12px;background:#0a0e18cc;border:1px solid #ffffff20;padding:5px 8px;border-radius:9px;font-size:10px;color:#dbe0ef}.info{padding:14px;display:flex;flex-direction:column;flex:1}.info h3{font-size:14px;line-height:1.35;margin:0 0 9px}.price{display:flex;align-items:center;gap:7px;margin-top:auto}.old{text-decoration:line-through;color:#737d94;font-size:12px}.new{font-weight:800;font-size:18px}.buy{margin-top:12px;width:100%;border:0;border-radius:12px;padding:11px;background:linear-gradient(90deg,var(--accent),#5d8cff);color:#fff;font-weight:800;cursor:pointer}.note{margin-top:22px;padding:16px;border:1px solid #2d3853;background:#0d1423;border-radius:18px;color:#c5ccdc;font-size:13px;line-height:1.55}.note b{color:#fff}.bottom{position:fixed;left:0;right:0;bottom:0;background:#090d18eF;border-top:1px solid var(--line);backdrop-filter:blur(14px);padding:10px 16px;display:flex;justify-content:center}.bottom .inner{width:min(868px,100%);display:flex;justify-content:space-around}.nav{background:none;border:0;color:#9da8bd;cursor:pointer;font-size:11px}.nav strong{display:block;font-size:20px;color:#fff;margin-bottom:2px}.modal{position:fixed;inset:0;background:#0009;display:none;align-items:flex-end;justify-content:center;padding:12px;z-index:10}.modal.show{display:flex}.sheet{width:min(560px,100%);background:#101625;border:1px solid var(--line);border-radius:24px 24px 16px 16px;padding:20px;box-shadow:0 -20px 80px #0008}.sheet h3{margin:0 0 5px}.muted{color:var(--muted);font-size:13px}.field{margin-top:14px}.field label{font-size:12px;color:#b8c1d3}.field input{width:100%;margin-top:7px;padding:13px;border-radius:12px;border:1px solid var(--line);background:#0a0f1b;color:#fff;outline:none}.paygrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.qrbox{display:none;margin-top:14px;text-align:center;padding:12px;border:1px solid var(--line);border-radius:16px;background:#fff}.qrbox.show{display:block}.qrbox img{width:min(260px,100%);border-radius:10px}.qrbox p{margin:8px 0 0;color:#111;font-size:12px}.pay{border:1px solid var(--line);background:#171e2e;color:#fff;border-radius:13px;padding:13px;cursor:pointer}.pay:hover{border-color:#6674ff}.close{width:100%;margin-top:10px;padding:12px;border:0;border-radius:12px;background:#20283a;color:#fff;cursor:pointer}.small{font-size:11px;color:#7f8aa1;margin-top:10px;line-height:1.5}@media(max-width:560px){.grid{grid-template-columns:1fr 1fr}.hero h1{font-size:29px}.product{min-height:280px}}@media(max-width:390px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="brand"><img src="assets/logo.svg"><div><b>JafarxStore</b><span>Digital products • Ready to use</span></div></div><button class="support" onclick="support()">💬 Support</button></header>
+<section class="hero"><h1>Konten digital,<br>siap dipakai.</h1><p>Pilih produk, tekan <b>Buy</b>, lalu isi email atau WhatsApp aktif. Produk akan dikirim setelah pembayaran terverifikasi.</p><span class="pill">⚡ Instant order flow</span></section>
+<div class="section"><h2>Produk pilihan</h2><span>7 produk</span></div><main class="grid" id="products"></main>
+<div class="note"><b>📩 Catatan pengiriman</b><br>Setelah checkout, pastikan kamu mencantumkan <b>email atau nomor WhatsApp aktif</b> yang bisa menerima produk digital. Jangan masukkan data sensitif.</div>
+</div>
+<nav class="bottom"><div class="inner"><button class="nav" onclick="window.scrollTo({top:0,behavior:'smooth'})"><strong>⌂</strong>Home</button><button class="nav" onclick="document.querySelector('.section').scrollIntoView({behavior:'smooth'})"><strong>▦</strong>Products</button><button class="nav" onclick="support()"><strong>☏</strong>Support</button><button class="nav" onclick="contact()"><strong>✉</strong>Contact</button></div></nav>
+<div class="modal" id="modal"><div class="sheet"><h3 id="mTitle">Buy</h3><div class="muted" id="mPrice"></div><div class="field"><label>Email atau WhatsApp aktif</label><input id="contact" placeholder="contoh@email.com / 08xxxxxxxxxx"></div><div class="field"><label>Catatan (opsional)</label><input id="notes" placeholder="Tulis catatan pengiriman..."></div><div class="paygrid"><button class="pay" onclick="pay('DANA')">💳 Bayar via DANA</button><button class="pay" onclick="pay('PayPal')">🅿️ PayPal QR</button></div><div class="qrbox" id="qrbox"><img src="assets/paypal-qr.png" alt="PayPal QR"><p>Scan QR PayPal untuk membayar.</p></div><div class="small">Setelah pembayaran, kembali ke toko dan pastikan email atau WhatsApp aktif kamu sudah dicantumkan. Produk dikirim setelah pembayaran terverifikasi.</div><button class="close" onclick="closeModal()">Batal</button></div></div>
+<script>
+const PRODUCTS=[
+['3000+ Video Konten Masakan Siap Edit & Upload',35000,50000,'🍳'],
+['1000+ Content Motion Graphics',25000,30000,'✨'],
+['1000+ Content PUBG Mobile Siap Edit',25000,30000,'🎮'],
+['1000+ Content ML Siap Edit',25000,30000,'⚔️'],
+['1000+ Content Affiliate China Siap Edit & Upload',25000,30000,'🛍️'],
+['1000+ Content Review PC & Laptop Siap Edit & Upload',25000,30000,'💻'],
+['Beragam eBook Berguna',10000,20000,'📚']
+];
+const fmt=n=>'Rp'+n.toLocaleString('id-ID');
+const root=document.getElementById('products');
+const VISUALS=['food','motion','pubg','ml','affiliate','pc','ebook'];
+root.innerHTML=PRODUCTS.map((p,i)=>`<article class="product"><div class="visual"><img src="assets/${VISUALS[i]}.svg" alt="${p[0]}"><span class="tag">DIGITAL</span></div><div class="info"><h3>${p[0]}</h3><div class="price"><span class="old">${fmt(p[2])}</span><span class="new">${fmt(p[1])}</span></div><button class="buy" onclick="openBuy(${i})">Buy →</button></div></article>`).join('');
+let selected=-1;
+function openBuy(i){selected=i;document.getElementById('mTitle').textContent=PRODUCTS[i][0];document.getElementById('mPrice').textContent=fmt(PRODUCTS[i][1]);document.getElementById('qrbox').classList.remove('show');document.getElementById('modal').classList.add('show');}
+function closeModal(){document.getElementById('modal').classList.remove('show');document.getElementById('qrbox').classList.remove('show')}
+async function pay(method){
+ const c=document.getElementById('contact').value.trim();
+ const notes=document.getElementById('notes').value.trim();
+ if(!c){alert('Isi email atau WhatsApp aktif dulu agar produk bisa dikirim.');return}
+ const product=PRODUCTS[selected];
+ if(selected<0){alert('Pilih produk terlebih dahulu.');return}
+ const btns=[...document.querySelectorAll('.pay')];
+ btns.forEach(b=>b.disabled=true);
+ btns.forEach(b=>b.style.opacity='.6');
+ try{
+   const form=new FormData();
+   form.append('_subject','JafarxStore - Pesanan Baru: '+product[0]);
+   form.append('_captcha','false');
+   form.append('_template','table');
+   form.append('Produk',product[0]);
+   form.append('Harga',fmt(product[1]));
+   form.append('Email atau WhatsApp Customer',c);
+   form.append('Catatan',notes||'-');
+   form.append('Metode Pembayaran',method);
+   form.append('Waktu Order',new Date().toLocaleString('id-ID'));
+   const res=await fetch('https://formsubmit.co/ajax/kingsnowbussines@gmail.com',{method:'POST',body:form,headers:{Accept:'application/json'}});
+   if(!res.ok) throw new Error('Gagal mengirim order');
+   if(method==='DANA'){
+     alert('Pesanan sudah dikirim ke customer support. Sekarang kamu akan diarahkan ke pembayaran DANA.');
+     window.open('https://link.dana.id/minta?full_url=https://qr.dana.id/v1/281012012024010921195869','_blank');
+   } else {
+     document.getElementById('qrbox').classList.add('show');
+     document.getElementById('qrbox').scrollIntoView({behavior:'smooth',block:'center'});
+     alert('Data pesanan sudah dikirim ke customer support. Silakan lanjutkan pembayaran dengan QR PayPal.');
+   }
+ }catch(e){
+   alert('Data pesanan belum terkirim. Coba lagi atau hubungi customer support.');
+ }finally{
+   btns.forEach(b=>b.disabled=false);
+   btns.forEach(b=>b.style.opacity='1');
+ }
+}
+function support(){window.location.href='mailto:kingsnowbussines@gmail.com?subject=JafarxStore%20Customer%20Support'}
+function contact(){window.location.href='mailto:kingsnowbussines@gmail.com?subject=JafarxStore%20Contact'}
+</script>
+</body></html>
